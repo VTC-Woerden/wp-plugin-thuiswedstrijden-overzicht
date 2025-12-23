@@ -1,0 +1,75 @@
+.match_day_heading {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-top: 1px solid #ebebeb;
+    padding-top: 45px;
+}
+
+.match_day_heading:first-child {
+	border-top: none;
+    padding-top: 0px;
+}
+
+.match_day {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 25px 0px;
+}
+
+.match_day__match {
+	display: inline-flex;
+	align-items: center;
+	background: #efefef;
+    padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+.match_day__match:nth-child(odd) {
+	margin-right: 10px;
+}
+
+.match_day__match:nth-child(even) {
+	margin-left: 10px;
+}
+
+.match_day__home {
+	color: #545454;
+	font-size: 15px;
+	text-align: right;
+	flex: 1 1 0;
+	margin-right: 10px;
+	line-height: 14px;
+}
+
+.match_day__time {
+	text-align: center;
+	flex: 0 0 65px;
+	background: #00378a;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+.match_day__guests {
+	font-size: 15px;
+	text-align: left;
+	flex: 1 1 0;
+	margin-left: 10px;
+	color: #545454;
+	line-height: 14px;
+}
+
+@media only screen and (max-width: 1200px) {
+  	.match_day {
+		grid-template-columns: 1fr;
+	}
+	
+	.match_day__match:nth-child(odd) {
+		margin-right: 0px;
+	}
+
+	.match_day__match:nth-child(even) {
+		margin-left: 0px;
+	}
+}
