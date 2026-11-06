@@ -3,7 +3,7 @@
 	margin-bottom: 50px;
 	border-top: 1px solid white;
     padding-top: 45px;
-	color: white;
+	color: white!important;
 }
 
 .match_day_heading:first-child {
